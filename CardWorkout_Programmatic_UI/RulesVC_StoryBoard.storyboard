@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--RulesVC-->
+        <scene sceneID="Pez-rd-Ue4">
+            <objects>
+                <viewController storyboardIdentifier="rulesSBID" id="HF8-lj-jpT" customClass="RulesVC" customModule="CardWorkout_Programmatic_UI" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Klg-hi-CSD">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Ue-U4-39Z">
+                                <rect key="frame" x="5" y="84" width="87.666666666666671" height="35.666666666666657"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="chevron.backward" catalog="system" title="Back" imagePadding="8">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="18"/>
+                                </buttonConfiguration>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rules" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Xw-AM-gLT">
+                                <rect key="frame" x="135.33333333333334" y="209" width="122.66666666666666" height="40.666666666666657"/>
+                                <fontDescription key="fontDescription" name="Copperplate-Bold" family="Copperplate" pointSize="39"/>
+                                <color key="textColor" systemColor="systemTealColor"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" systemColor="labelColor"/>
+                                <size key="shadowOffset" width="1" height="1"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The number on each card represents the number of sets for each exercise.  J = 11, Q = 12, K = 13, A = 14" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FUp-em-WFp">
+                                <rect key="frame" x="40" y="289.66666666666669" width="313" height="97.333333333333314"/>
+                                <fontDescription key="fontDescription" name="Baskerville" family="Baskerville" pointSize="21"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" systemColor="systemCyanColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="♠️ → Chin Ups  ❤️ → Crunches  ♣️ → Push ups  ♦️ → Squats" textAlignment="justified" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rjg-Ee-wFw">
+                                <rect key="frame" x="122" y="427" width="149" height="155"/>
+                                <fontDescription key="fontDescription" name="Menlo-Bold" family="Menlo" pointSize="19"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="2sT-Ha-5Fs"/>
+                        <color key="backgroundColor" systemColor="systemGray5Color"/>
+                        <constraints>
+                            <constraint firstItem="2Xw-AM-gLT" firstAttribute="top" secondItem="Klg-hi-CSD" secondAttribute="topMargin" constant="150" id="8tl-RI-f5h"/>
+                            <constraint firstItem="FUp-em-WFp" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Klg-hi-CSD" secondAttribute="leading" id="GJB-N2-eWR"/>
+                            <constraint firstItem="2sT-Ha-5Fs" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="5Ue-U4-39Z" secondAttribute="trailing" symbolic="YES" id="PV3-s3-urP"/>
+                            <constraint firstItem="5Ue-U4-39Z" firstAttribute="top" secondItem="2sT-Ha-5Fs" secondAttribute="top" constant="25" id="Yif-Df-10a"/>
+                            <constraint firstItem="Rjg-Ee-wFw" firstAttribute="centerX" secondItem="Klg-hi-CSD" secondAttribute="centerX" id="bpH-oS-C5c"/>
+                            <constraint firstItem="Rjg-Ee-wFw" firstAttribute="top" secondItem="FUp-em-WFp" secondAttribute="bottom" constant="40" id="dpg-Ny-601"/>
+                            <constraint firstItem="5Ue-U4-39Z" firstAttribute="leading" secondItem="2sT-Ha-5Fs" secondAttribute="leading" constant="5" id="rKQ-3b-Cth"/>
+                            <constraint firstAttribute="trailing" secondItem="FUp-em-WFp" secondAttribute="trailing" constant="40" id="vVW-D1-udr"/>
+                            <constraint firstItem="FUp-em-WFp" firstAttribute="centerX" secondItem="Klg-hi-CSD" secondAttribute="centerX" id="w6b-63-fyy"/>
+                            <constraint firstItem="FUp-em-WFp" firstAttribute="top" secondItem="2Xw-AM-gLT" secondAttribute="bottom" constant="40" id="yLt-cg-G7d"/>
+                            <constraint firstItem="2Xw-AM-gLT" firstAttribute="centerX" secondItem="Klg-hi-CSD" secondAttribute="centerX" id="zk8-F6-eNa"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="backButton" destination="5Ue-U4-39Z" id="dq7-A2-GdE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WC1-Cv-TMQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="587" y="23"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="chevron.backward" catalog="system" width="97" height="128"/>
+        <systemColor name="labelColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemCyanColor">
+            <color red="0.19607843137254902" green="0.67843137254901964" blue="0.90196078431372551" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGray5Color">
+            <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemTealColor">
+            <color red="0.18823529411764706" green="0.69019607843137254" blue="0.7803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
